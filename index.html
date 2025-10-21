@@ -350,7 +350,7 @@ SLIDES.forEach((s,i) => {
   // background
   const bg = document.createElement("div");
   bg.className = "bg";
-  bg.style.backgroundImage = url('${bgUrl}');
+  bg.style.backgroundImage = 'url('${bgUrl}')';
   slideEl.appendChild(bg);
 
   // overlay
@@ -419,7 +419,7 @@ function showSlide(index){
     sl.classList.toggle("visible", idx === index);
   });
   current = index;
-  pageIndicator.textContent = ${current+1} / ${total};
+  pageIndicator.textContent = '${current+1} / ${total}';
   // focus stage for keyboard nav
   document.activeElement.blur();
 }
